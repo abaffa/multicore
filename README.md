@@ -22,3 +22,19 @@ Uso: convert_dsk_nib.py [-h help] [-e <caminho> caminho para o dsk2nib] [-w <cam
 
 -v modo verbose para debug
 
+
+
+
+
+## Mover mais de 128 arquivos para múltiplos diretórios
+
+
+Uso: move_files.py [-h help] [-w <caminho> caminho para os arquivos] [-v verbose]
+
+
+-h help
+
+-w indica um diretório diferente do corrente para encontrar os arquivos
+
+-v modo verbose para debug
+

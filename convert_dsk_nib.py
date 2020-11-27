@@ -67,6 +67,15 @@ def execute(dsk2nib_path, working_path, verbose = True):
 
     onlyfiles = [f for f in listdir(working_path) if isfile(join(working_path, f)) and f.lower().endswith(".dsk")]
 
+    if len(onlyfiles) == 0:
+        print("Nenhum arquivo encontrado para conversão.")
+    elif len(onlyfiles) == 1:
+        print("Encontrei 1 arquivo para conversão.")
+    else:
+        print("Foram encontrados %d arquivos para conversão." % len(onlyfiles))
+    
+    print()
+    
     for f in onlyfiles:
         filename = f.lower()
         filename = filename[:-4]
@@ -108,4 +117,4 @@ def main(argv):
 if __name__ == "__main__":
 
     main(sys.argv[1:])
-    print("+ done!")
+    print("+ feito!")
